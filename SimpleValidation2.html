@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Form validation</p>
+<form>
+<label>Username</label>
+<input type="text" id="name" required></input>
+<br>
+<br>
+<lable>Password</label>
+<input type="password" id="password" required></input>
+<br>
+<br>
+<input type = "button" value="Submit" onclick = "abc()">
+</form>
+
+<p id="demo"></p>
+
+<script>
+
+function abc(){
+var username,password,text;
+username = document.getElementById("name");
+password = document.getElementById("password");
+if(username.value.length < 6 || password.value.length < 6){
+text = password.value;
+}else{
+text = "valid";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
