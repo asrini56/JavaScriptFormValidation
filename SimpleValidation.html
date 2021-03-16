@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="abc()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+
+function abc(){
+var a = document.getElementById("numb").value;
+var text;
+if (isNaN(a) || a < 1 || a > 10){
+	text = "invalid";
+}else{
+text = "valid";
+}
+document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
